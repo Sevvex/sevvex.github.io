@@ -1,113 +1,66 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sevvex - FiveM Development Team</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-    <a class="navbar-brand" href="#">Sevvex</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">Über uns</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Dienstleistungen</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projekte</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-        </ul>
-    </div>
-</nav>
-
-<header class="hero d-flex align-items-center">
-    <div class="hero-content text-center">
-        <h1>Willkommen bei Sevvex</h1>
-        <p>Ihre erste Wahl für professionelles FiveM Development</p>
-        <a href="#contact" class="btn btn-primary">Jetzt kontaktieren</a>
-    </div>
-</header>
-
-<section id="about" class="section">
-    <div class="container text-center">
-        <h2>Über uns</h2>
-        <p class="lead">Das Sevvex-Team besteht aus talentierten Entwicklern, die sich auf FiveM Modding und Entwicklung spezialisiert haben.</p>
-    </div>
-</section>
-
-<section id="services" class="section bg-dark">
+<section id="services" class="section bg-dark fade-in">
     <div class="container text-center">
         <h2>Dienstleistungen</h2>
         <div class="row">
-            <div class="col-md-4 service-box">
+            <div class="col-md-4 service-box service-item">
                 <h3>Server Entwicklung</h3>
-                <p>Leistungsstarke Server, die auf Ihre Community zugeschnitten sind.</p>
+                <p>Wir bieten maßgeschneiderte Serverlösungen, die perfekt auf Ihre Bedürfnisse abgestimmt sind.</p>
             </div>
-            <div class="col-md-4 service-box">
-                <h3>Modding</h3>
-                <p>Einzigartige Mods für ein verbessertes Erlebnis.</p>
+            <div class="col-md-4 service-box service-item">
+                <h3>Skriptentwicklung</h3>
+                <p>Unsere Skripte garantieren eine effiziente und reibungslose Spielerfahrung auf Ihrem FiveM Server.</p>
             </div>
-            <div class="col-md-4 service-box">
-                <h3>Support</h3>
-                <p>Professioneller Support für unsere Projekte.</p>
+            <div class="col-md-4 service-box service-item">
+                <h3>Support & Wartung</h3>
+                <p>Wir bieten kontinuierlichen Support und Wartung für Ihre FiveM-Server, um sicherzustellen, dass alles perfekt läuft.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section id="projects" class="section">
+<section id="projects" class="section fade-in">
     <div class="container text-center">
-        <h2>Unsere Projekte</h2>
+        <h2>Projekte</h2>
         <div class="row">
-            <div class="col-lg-6 project-box">
-                <h4>FiveM Server</h4>
-                <p>Ein leistungsstarker Server für die FiveM Community.</p>
-                <a href="#" class="btn btn-primary">Zum Discord</a>
+            <div class="col-md-6 project-box project-item">
+                <h3>Project Phoenix</h3>
+                <p>Ein revolutionärer FiveM-Server, der innovative Gameplay-Elemente und eine engagierte Community bietet.</p>
             </div>
-            <div class="col-lg-6 project-box">
-                <h4>Loading Screen</h4>
-                <p>Anpassbarer Ladebildschirm für dein FiveM Spiel.</p>
-                <a href="#" class="btn btn-primary">Mehr erfahren</a>
+            <div class="col-md-6 project-box project-item">
+                <h3>Roleplay Hub</h3>
+                <p>Ein umfangreiches Roleplay-Server-Projekt, das durch atemberaubende Skripte und Features besticht.</p>
             </div>
         </div>
     </div>
 </section>
 
-<footer id="contact" class="footer text-center bg-dark">
-    <div class="container">
-        <h2>Kontaktieren Sie uns</h2>
-        <p>Für Anfragen kontaktieren Sie uns bitte über das folgende Formular.</p>
-        <form>
-            <div class="form-row justify-content-center">
-                <div class="col-md-5 mb-3">
-                    <input type="text" placeholder="Ihr Name" class="form-control">
-                </div>
-                <div class="col-md-5 mb-3">
-                    <input type="email" placeholder="Ihre E-Mail" class="form-control">
-                </div>
+<section id="contact" class="section bg-dark fade-in">
+    <div class="container text-center">
+        <h2>Kontakt</h2>
+        <p class="lead">Haben Sie Fragen oder möchten Sie mit uns zusammenarbeiten? Kontaktieren Sie uns noch heute!</p>
+        <form action="#" method="post" class="form-inline justify-content-center">
+            <div class="form-group mb-2">
+                <input type="email" class="form-control" id="email" placeholder="Ihre E-Mail-Adresse">
             </div>
-            <div class="form-row justify-content-center">
-                <div class="col-md-10">
-                    <textarea placeholder="Ihre Nachricht" class="form-control" rows="4"></textarea>
-                </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <textarea class="form-control" rows="1" placeholder="Ihre Nachricht"></textarea>
             </div>
-            <div class="form-row justify-content-center mt-3">
-                <div class="col-md-5">
-                    <button class="btn btn-primary btn-block">Nachricht senden</button>
-                </div>
-            </div>
+            <button type="submit" class="btn btn-primary mb-2">Absenden</button>
         </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container text-center">
+        <h2>Sevvex - FiveM Development Team</h2>
+        <p>© 2024 Sevvex. Alle Rechte vorbehalten.</p>
     </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 <script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
