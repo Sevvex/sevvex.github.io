@@ -4,14 +4,21 @@ body {
     padding: 0;
     color: #ffffff;
     background-color: #000000;
+    overflow-x: hidden;
 }
 
 .navbar {
     background-color: #222222;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: #111111;
 }
 
 .nav-link {
     color: #ffffff !important;
+    transition: color 0.3s;
 }
 
 .nav-link:hover {
@@ -25,27 +32,53 @@ body {
     align-items: center;
     text-align: center;
     background-color: #000000;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .hero-content h1 {
     font-size: 2.5rem;
+    animation: slideIn 0.5s forwards;
 }
 
 .hero-content p {
     font-size: 1.25rem;
+    animation: slideIn 0.7s forwards;
 }
 
 .btn-light {
     background-color: #007bff;
     color: white;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn-light:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 .section {
     padding: 40px 0;
+}
+
+.service-box,
+.project-box {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 15px;
+    background-color: #222222;
+}
+
+.service-box:hover,
+.project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
 }
 
 .footer {
@@ -53,23 +86,34 @@ body {
     padding: 30px 20px;
 }
 
-.footer input, .footer textarea {
+.footer input,
+.footer textarea {
     margin: 10px 0;
     border: 1px solid #444;
     border-radius: 5px;
     background-color: #222222;
     color: white;
+    transition: border-color 0.3s;
 }
 
-.footer input::placeholder, .footer textarea::placeholder {
+.footer input::placeholder,
+.footer textarea::placeholder {
     color: #bbb;
+}
+
+.footer input:focus,
+.footer textarea:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 .footer button {
     background-color: #007bff;
     border: none;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .footer button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
