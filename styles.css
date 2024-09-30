@@ -26,8 +26,7 @@ body {
 
 .hero {
     height: 100vh;
-    background: url('https://source.unsplash.com/random/1920x1080?technology') center/cover no-repeat;
-    animation: fadeIn 1s;
+    background: url('https://source.unsplash.com/random/1920x1080?technology') center/cover no-repeat; /* Beispiel-Hintergrundbild */
     position: relative;
     display: flex;
     justify-content: center;
@@ -84,6 +83,23 @@ body {
     box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
 }
 
+.service-box {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+.service-box:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.service-box:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.service-box:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
 .footer {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 60px 20px;
@@ -124,4 +140,8 @@ body {
 .footer button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
+}
+
+.footer p {
+    margin-top: 20px;
 }
