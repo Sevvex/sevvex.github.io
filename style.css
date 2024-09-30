@@ -1,7 +1,11 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #ffffff;
-    background-color: #121212;
+    background-color: #0a0a0a;
+}
+
+.header, footer {
+    background-color: #1c1c1c;
 }
 
 .hero {
@@ -18,42 +22,41 @@ body {
     to { opacity: 1; }
 }
 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-30px);
-    }
-    60% {
-        transform: translateY(-15px);
-    }
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
-.animate-text {
-    animation: bounce 1s infinite;
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
 }
 
 .service-item {
-    background-color: #1e1e1e; 
-    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #2c2c2c;
+    transition: box-shadow 0.3s, transform 0.2s;
     border-radius: 10px;
     padding: 20px;
+    opacity: 0;
 }
 
 .service-item:hover {
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.service-item.animate-fade {
+    animation: slideIn 0.5s forwards;
 }
 
 .project-item {
-    border: 1px solid #33ccff;
-    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #2c2c2c;
+    transition: box-shadow 0.3s, transform 0.2s;
+    opacity: 0;
 }
 
-.project-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+.project-item.animate-project {
+    animation: slideIn 0.5s forwards;
 }
 
 .btn-primary {
@@ -63,17 +66,16 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #0069d9;
-    transform: scale(1.1);
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
-form input, form textarea {
-    background-color: #1e1e1e;
+.form-control {
+    background-color: #1c1c1c;
     color: #ffffff;
     border: 1px solid #333;
 }
-
-form input:focus, form textarea:focus {
+.form-control:focus {
     background-color: #333;
     border: 1px solid #007bff;
 }
