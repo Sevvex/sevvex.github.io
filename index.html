@@ -11,6 +11,9 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <a class="navbar-brand" href="#">Sevvex</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#about">Über uns</a></li>
@@ -32,11 +35,11 @@
 <section id="about" class="section">
     <div class="container text-center">
         <h2>Über uns</h2>
-        <p>Das Sevvex-Team besteht aus talentierten Entwicklern, die sich auf FiveM Modding und Entwicklung spezialisiert haben.</p>
+        <p class="lead">Das Sevvex-Team besteht aus talentierten Entwicklern, die sich auf FiveM Modding und Entwicklung spezialisiert haben.</p>
     </div>
 </section>
 
-<section id="services" class="section">
+<section id="services" class="section bg-dark">
     <div class="container text-center">
         <h2>Dienstleistungen</h2>
         <div class="row">
@@ -74,16 +77,28 @@
     </div>
 </section>
 
-<footer id="contact" class="footer text-center">
-    <h2>Kontaktieren Sie uns</h2>
-    <p>Für Anfragen kontaktieren Sie uns bitte über das folgende Formular.</p>
-    <form>
-        <input type="text" placeholder="Ihr Name" class="form-control mb-2" required>
-        <input type="email" placeholder="Ihre E-Mail" class="form-control mb-2" required>
-        <textarea placeholder="Nachricht" class="form-control mb-2" required></textarea>
-        <button type="submit" class="btn btn-primary">Absenden</button>
-    </form>
-    <p>© 2024 Sevvex. Alle Rechte vorbehalten.</p>
+<footer id="contact" class="footer text-center bg-dark">
+    <div class="container">
+        <h2>Kontaktieren Sie uns</h2>
+        <p>Für Anfragen kontaktieren Sie uns bitte über das folgende Formular.</p>
+        <form>
+            <div class="form-row justify-content-center">
+                <div class="col-md-5 mb-3">
+                    <input type="text" placeholder="Ihr Name" class="form-control" required>
+                </div>
+                <div class="col-md-5 mb-3">
+                    <input type="email" placeholder="Ihre E-Mail" class="form-control" required>
+                </div>
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="col-md-10 mb-3">
+                    <textarea placeholder="Nachricht" class="form-control" required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Absenden</button>
+        </form>
+        <p>© 2024 Sevvex. Alle Rechte vorbehalten.</p>
+    </div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
