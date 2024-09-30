@@ -84,30 +84,31 @@
         <form>
             <div class="form-row justify-content-center">
                 <div class="col-md-5 mb-3">
-                    <input type="text" placeholder="Ihr Name" class="form-control" required>
+                    <input type="text" placeholder="Ihr Name" class="form-control">
                 </div>
                 <div class="col-md-5 mb-3">
-                    <input type="email" placeholder="Ihre E-Mail" class="form-control" required>
+                    <input type="email" placeholder="Ihre E-Mail" class="form-control">
                 </div>
             </div>
             <div class="form-row justify-content-center">
-                <div class="col-md-10 mb-4">
-                    <textarea placeholder="Nachricht" class="form-control" required></textarea>
+                <div class="col-md-10">
+                    <textarea placeholder="Ihre Nachricht" class="form-control" rows="4"></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Absenden</button>
+            <div class="form-row justify-content-center mt-3">
+                <div class="col-md-5">
+                    <button class="btn btn-primary btn-block">Nachricht senden</button>
+                </div>
+            </div>
         </form>
-        <p class="mt-4">© 2024 Sevvex. Alle Rechte vorbehalten.</p>
     </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        navbar.classList.toggle('scrolled', window.scrollY > 50);
-    });
-</script>
+
 </body>
 </html>
