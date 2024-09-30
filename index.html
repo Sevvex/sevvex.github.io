@@ -3,24 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sevvex - Animierte Website</title>
+    <title>Sevvex - FiveM Development Team</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1 class="fade-in">Willkommen bei Sevvex</h1>
-        <p class="fade-in delay-1">Entdecke beeindruckende Animationen</p>
+        <div class="logo">Sevvex</div>
+        <nav>
+            <ul>
+                <li><a href="#about">Über uns</a></li>
+                <li><a href="#services">Dienstleistungen</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section class="animation-section">
-            <div class="box bounce"></div>
-            <div class="box slide-in-left"></div>
-            <div class="box rotate"></div>
-            <div class="box zoom-in"></div>
-        </section>
-    </main>
-    <footer>
-        <p class="fade-in delay-2">&copy; 2024 Sevvex. Alle Rechte vorbehalten.</p>
+    
+    <section class="hero">
+        <h1>Willkommen bei Sevvex</h1>
+        <p>Ihre erste Wahl für professionelles FiveM Development</p>
+        <a href="#contact" class="btn">Jetzt kontaktieren</a>
+    </section>
+
+    <section id="about">
+        <h2>Über uns</h2>
+        <p>Das Sevvex-Team besteht aus talentierten Entwicklern, die sich auf FiveM Modding und Entwicklung spezialisiert haben. Wir bieten maßgeschneiderte Lösungen für Ihre Bedürfnisse an.</p>
+    </section>
+    
+    <section id="services">
+        <h2>Dienstleistungen</h2>
+        <div class="services-container">
+            <div class="service-item fade-in">
+                <h3>Server Entwicklung</h3>
+                <p>Wir erstellen leistungsstarke Server, die auf die Bedürfnisse Ihrer Community zugeschnitten sind.</p>
+            </div>
+            <div class="service-item fade-in delay-1">
+                <h3>Modding</h3>
+                <p>Erstellen Sie einzigartige Mods, die das Spielerlebnis Ihrer Nutzer verbessern.</p>
+            </div>
+            <div class="service-item fade-in delay-2">
+                <h3>Support</h3>
+                <p>Wir bieten professionellen Support für alle unsere Projekte.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Unser Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="portfolio-item slide-in">
+                <img src="project1.jpg" alt="Projekt 1">
+                <h4>Projekt 1</h4>
+            </div>
+            <div class="portfolio-item slide-in delay-1">
+                <img src="project2.jpg" alt="Projekt 2">
+                <h4>Projekt 2</h4>
+            </div>
+            <div class="portfolio-item slide-in delay-2">
+                <img src="project3.jpg" alt="Projekt 3">
+                <h4>Projekt 3</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Kontaktieren Sie uns</h2>
+        <p>Für Anfragen und Angebote kontaktieren Sie uns bitte über das folgende Formular.</p>
+        <form>
+            <input type="text" placeholder="Ihr Name" required>
+            <input type="email" placeholder="Ihre E-Mail" required>
+            <textarea placeholder="Nachricht" required></textarea>
+            <button type="submit">Absenden</button>
+        </form>
+        <p>&copy; 2024 Sevvex. Alle Rechte vorbehalten.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
