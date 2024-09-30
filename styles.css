@@ -9,139 +9,176 @@ body {
 
 .navbar {
     background-color: rgba(0, 0, 0, 0.8);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    padding: 20px;
 }
 
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 1);
+    padding: 10px;
 }
 
 .nav-link {
     color: #ffffff !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #007bff !important;
+    color: #00afff !important;
 }
 
 .hero {
     height: 100vh;
-    background: url('https://source.unsplash.com/random/1920x1080?technology') center/cover no-repeat; 
+    background: url('https://source.unsplash.com/random/1920x1080?technology') center/cover no-repeat;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
 }
 
 .hero-content {
     position: relative;
     z-index: 1;
+    color: #ffffff;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    font-weight: 600;
     margin-bottom: 0.5rem;
-    animation: fadeInUp 1s forwards;
+    animation: fadeInUp 1.2s forwards;
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
     animation: fadeInUp 1.5s forwards;
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #00afff;
     border: none;
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    border-radius: 25px;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
+    background-color: #008fcc;
+    transform: translateY(-3px);
 }
 
 .section {
-    padding: 60px 20px;
+    padding: 80px 20px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.section.bg-dark {
+    background-color: #111;
+    color: #ffffff;
 }
 
 .service-box,
 .project-box {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    padding: 30px;
-    margin: 15px 0;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-box:hover,
 .project-box:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
-}
-
-.service-box {
-    opacity: 0;
-    animation: fadeIn 0.5s forwards;
-}
-
-.service-box:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.service-box:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.service-box:nth-child(3) {
-    animation-delay: 0.6s;
+    box-shadow: 0 10px 50px rgba(255, 255, 255, 0.2);
 }
 
 .footer {
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 60px 20px;
+    padding: 80px 20px;
+    color: #bbb;
+    font-size: 0.9rem;
 }
 
 .footer h2 {
+    font-weight: 500;
     margin-bottom: 30px;
+    color: #ffffff;
 }
 
 .footer input,
 .footer textarea {
-    margin: 10px 0;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
+    margin: 15px 0;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.05);
     color: white;
     border: none;
-    padding: 10px;
-    transition: border-color 0.3s;
+    padding: 12px;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .footer input::placeholder,
 .footer textarea::placeholder {
-    color: #bbb;
+    color: #888;
 }
 
 .footer input:focus,
 .footer textarea:focus {
     outline: none;
+    box-shadow: 0 0 10px #00afff;
 }
 
 .footer button {
-    background-color: #007bff;
+    background-color: #00afff;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .footer button:hover {
-    background-color: #0056b3;
+    background-color: #008fcc;
     transform: scale(1.05);
 }
 
 .footer p {
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
