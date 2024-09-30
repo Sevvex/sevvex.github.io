@@ -1,21 +1,16 @@
 window.addEventListener("load", () => {
     const fadeElements = document.querySelectorAll('.fade-in');
-    
     fadeElements.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.4}s`;
-        el.classList.add('fade-in-active');
+        gsap.to(el, { duration: 1, opacity: 1, delay: index * 0.3 });
     });
 
     const serviceItems = document.querySelectorAll('.service-item');
-    const projectItems = document.querySelectorAll('.project-item');
-
     serviceItems.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.3}s`;
-        el.classList.add('slide-in');
+        gsap.from(el, { duration: 0.7, opacity: 0, y: 20, delay: index * 0.3 });
     });
 
+    const projectItems = document.querySelectorAll('.project-item');
     projectItems.forEach((el, index) => {
-        el.style.transitionDelay = `${index * 0.3}s`;
-        el.classList.add('slide-in');
+        gsap.from(el, { duration: 0.7, opacity: 0, y: 20, delay: index * 0.3 });
     });
 });
