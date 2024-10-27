@@ -1,3 +1,3 @@
 # Summary
 
-- [Chapter 1](./chapter1.md)
+[Aether Terminal](./aether_terminal.md)
