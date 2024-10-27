@@ -1,0 +1,10 @@
+[book]
+authors = ["Aetherapp-ventures"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Aether Terminal Documentation"
+
+[output.html]
+git-repository-url = "https://github.com/aetherapp-ventures/aether-terminal"
+edit-url-template = "https://github.com/aetherapp-ventures/aether-terminal/edit/main/{path}"
